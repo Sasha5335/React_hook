@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Home from './pages/Home'
 import About from './pages/About'
+import Timer from './pages/Timer'
 import Contacts from './pages/Contacts'
 
 const App = (props) => {
@@ -15,6 +16,7 @@ const App = (props) => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/timer' component={Timer} />
         <Route path='/contacts' component={Contacts} />
       </Switch>
 
